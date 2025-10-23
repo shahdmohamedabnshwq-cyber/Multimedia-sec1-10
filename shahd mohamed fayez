@@ -1,0 +1,32 @@
+// task 4 
+def delete_element():
+    food_list = ['Apple', 'Banana', 'Cherry', 'Data']
+    user_input = input("Enter an item to delete: ")
+
+    if user_input in food_list:
+        food_list.remove(user_input)
+        print(f"{user_input} has been deleted successfully.")
+    else:
+        print(f"{user_input} was not found in the list.")
+
+    print("Final list:", food_list)
+
+Test the function
+delete_element()
+
+
+// task 5
+def insert_item():
+    data_list = ['Apple', 'Banana', 'Cherry', 'Data']
+    item_name = input("Enter an item to add: ")
+
+    if item_name in data_list:
+        print(f"{item_name} is already in the list.")
+    else:
+        data_list.append(item_name)
+        print(f"{item_name} has been added.")
+
+    print("Updated list:", data_list)
+
+Test the function
+insert_item()
